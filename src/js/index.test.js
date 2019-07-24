@@ -10,7 +10,7 @@ describe("Test of Test",()=>{
 
 describe("Index.html",()=>{
   it("It should have a h1",(done)=>{
-      const index = fs.readFile("/home/dennis/Desktop/node/seed/dist/index.html","utf-8",(err,data) =>{
+      const index = fs.readFile("../../dist/index.html","utf-8",(err,data) =>{
         if(err) throw err;
         jsdom.env(data,(err,window) =>{
 
